@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>博雅互动--首页</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			/*导航栏 开始*/
+			.navgation{
+				width: 100%;
+				height: 58px;
+				background: #191d3a;
+			}
+			.navgation .nav-inner{	
+				width: 1000px;
+				height: 58px;
+				margin: 0 auto;
+			
+			}
+			.navgation .nav-inner .logo{
+				background: url(img/logo.png) no-repeat;
+				height: 100%;
+				display: inline-block;
+				width: 170px;
+			}
+			.navgation .nav-inner .nav-content{
+				list-style: none;
+				display: inline-block;
+			}
+			.navgation .nav-inner .nav-content li{
+				float: left;
+				height: 58px;
+				width: 102px;
+				border-right: 1px solid #252947;
+				text-align: center;
+				line-height: 58px;
+			}
+			.navgation .nav-inner .nav-content li.my-active {
+				background: #252947;
+			}
+			.navgation .nav-inner .nav-content li a{
+				text-decoration: none;
+				color: #818496;
+				display: inline-block;
+				width: 102px;
+				height: 58px;
+				font-size: 12px;
+			}
+			.navgation .nav-inner .nav-content li a.my-active{
+			
+				color: #fff;
+			}
+			.navgation .nav-inner .nav-content li a:hover{
+				color: #fff;
+			}
+			.navgation .nav-inner .join-us{
+				display: inline-block;
+				margin-left: 48px;
+				width: 100px;	
+				height: 34px;
+				background: #3aca7a;
+				position: relative;
+			    top: -24px;
+			    border-radius: 5px;
+			    text-align: center;
+			    line-height: 34px;
+			}
+			.navgation .nav-inner .join-us a{
+				display: inline-block;
+				width: 100px;
+				height: 34px;
+				text-decoration: none;
+				color: #fff;
+				font-size: 12px;
+			}
+			.navgation .nav-inner .join-us a:hover{
+				background: #38b774;
+				border-radius: 5px;
+			}
+			/*导航栏 结束*/
+			.clr{
+				clear: both;
+			}
+			/*轮播图 开始*/
+			.banner{
+				width: 100%;
+				height: 465px;
+				background: url(img/banner.jpg) no-repeat center;
+				position: relative;
+			}
+			.banner .indicator{
+				width: 120px;
+				height: 12px;
+				position: absolute;
+				left: calc(50% - 60px);
+				bottom: 20px;
+				/*margin-left: -60px;*/
+			}
+			.banner .indicator ul{
+				list-style: none;
+				width: 120px;
+				height: 12px;
+			}
+			.banner .indicator ul li{
+				float: left;
+				height: 12px;
+				width: 12px;
+				border-radius: 50%;
+				background: #fdde90;
+				margin-left: 15px;
+			}
+			.banner .indicator ul li.current{
+				margin-left: 0px;
+			}
+			.banner .indicator ul li.current{
+				background: #fff;
+			}
+			/*轮播图 结束*/
+			
+			/*内容 产品 开始*/
+			.content{
+				width: 1000px;
+				height: 700px;
+				margin: 0 auto;
+				
+			}
+			.content .product{
+				width: 100%;
+				height: 279px;
+				border-bottom: 1px solid #dbe1e7;
+				position: relative;
+			}
+			.content .product ul{
+				list-style: none;
+			}
+			.content .product > ul > li{
+				float: left;
+				padding-top: 50px;
+				width: 218px;
+				margin-left: 43px;
+			}
+			.content .product ul li.current{
+				margin-left: 0px;
+			}
+			.content .product ul li:last-child{
+				margin-left: 42px;
+			}
+			.content .product ul li p img{
+				width: 218px;
+				height: 130px;
+			}
+			.content .product ul li h3{
+				text-align: center;
+				font-size: 12px;
+				font-weight: 700;
+				margin-top: 15px;
+			}
+			.content .product ul li .play{
+				text-align: center;
+				/*background: url(img/sanjiaoxing.png) no-repeat center right;*/
+			}
+			.content .product ul li .play a{
+				font-size: 10px;
+				text-decoration: none;
+				color: #38b774;
+				font-weight: 700;
+				text-transform: uppercase;
+				background: url(img/sanjiaoxing.png) no-repeat center right;
+				padding-right: 8px;
+			}
+			.content .product > .sencod-indicator{
+				width: 118px;
+				height: 12px;
+				background: white;
+				position: absolute;
+				bottom: -6px;
+				left: 50%;
+				margin-left: -59px;
+			}
+			.content .product >  .sencod-indicator > ul{
+				list-style: none;
+			}
+			.content .product > .sencod-indicator > ul > li{
+				width: 12px;
+				height: 12px;
+				border-radius:50%;
+				background: #b5c0cb;
+				margin-left: 14px;
+				float: left;
+				cursor: pointer;
+			}
+			.content .product > .sencod-indicator > ul > li.current{
+				background: #2fbc71;
+			}
+			
+			/*内容 产品 结束*/
+		</style>
+	</head>
+	<body>
+		<!--头部导航栏  开始-->
+		 <nav class="navgation">
+		 	<div class="nav-inner">
+		 		<h3 class="logo"></h3>
+		 		<ul class="nav-content">
+		 			<li class="my-active"><a class="my-active" href="#">首页</a></li>
+		 			<li><a href="#">博雅游戏</a></li>
+		 			<li><a href="#">博雅新闻</a></li>
+		 			<li><a href="#">关于我们</a></li>
+		 			<li><a href="#">客服中心</a></li>
+		 			<li><a href="#">投资者关系</a></li>
+		 		</ul>
+		 		<div class="join-us">
+		 			<a href="#">加入我们</a>
+		 		</div>
+		 	</div>
+		 </nav>
+		<!--头部导航栏    结束-->
+		
+		<!--清除浮动-->
+		<div class="clr"></div>
+		
+		<!--轮播图 开始-->
+		<div class="banner">
+			<div class="indicator">
+				<ul>
+					<li class="current selected"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		<!--轮播图结束-->
+		
+		<div class="clr"></div>
+		<!--内容 开始-->
+		<div class="content">
+			<!--内容中的产品-->
+			<div class="product">
+				<ul>
+					<li class="current">
+						<p>
+							<img src="img/bpt.jpg"/>
+						</p>
+						<h3>BPT宣传</h3>
+						<div class="play">
+							<a href="#">点击播放</a>
+						</div>
+					</li>
+					<li>
+						<p>
+							<img src="img/pro2.jpg"/>
+						</p>
+						<h3>博雅互动宣传视频</h3>
+						<div class="play">
+							<a href="#">点击播放</a>
+						</div>
+					</li>
+					<li>
+						<p>
+							<img src="img/pro3.jpg"/>
+						</p>
+						<h3>斗地主</h3>
+						<div class="play">
+							<a href="#">landlord</a>
+						</div>
+					</li>
+					<li >
+						<p>
+							<img src="img/pro4.jpg"/>
+						</p>
+						<h3>德州扑克</h3>
+						<div class="play">
+							<a href="#">Texas hold’em poker</a>
+						</div>
+					</li>
+				</ul>
+				<div class="sencod-indicator">
+					<ul>
+						<li class="second-circle current"></li>
+						<li class="second-circle"></li>
+						<li class="second-circle"></li>
+						<li class="second-circle"></li>
+					</ul>
+				</div>
+			</div>
+			<!--内容中的消息-->
+			<div class="info">
+				
+			</div>
+		</div>
+		<!--内容 结束-->
+	</body>
+</html>
